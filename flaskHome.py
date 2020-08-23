@@ -2,6 +2,7 @@ from flask import Flask, session
 from flask import render_template
 from flask import request, redirect
 from flask import session
+from users import newUser
 
 app = Flask(__name__)
 
@@ -65,6 +66,8 @@ def addEmail():
     for i in session['usernamePWDList']:
         if username == i[0] or password == i[1]:
             return render_template('signup.html', existingInfo = 'Existing username or password')
+    x = newUser(username, password)
+    
 
     session['username'] = username
     session['password'] = password
