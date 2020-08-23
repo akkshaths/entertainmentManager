@@ -10,7 +10,7 @@ app = Flask(__name__)
 app.secret_key = 'Bob'
 @app.route('/')
 def hello():
-    session['usernamePWDList'] = [["aashi123", "blue765"], ["akkie567", "notebook!"], ["akul89", "waterbottle"]]
+    session['usernamePWDList'] = [["user123@gmail.com", "ilovehackathons"], ["akkie567", "notebook!"], ["akul89", "waterbottle"]]
     return render_template("homepage.html")
 
 
@@ -24,7 +24,16 @@ def login():
 
 @app.route('/suggestions')
 def suggestions():
-    return render_template('suggestions.html', movies = "", music = "", news = "", magazines = "")
+    #this is where you will get the lsit of recommendations
+    suggestions = ''
+    var_name = ''
+    for i in var_name:
+        sugestions += '''
+        <ul>
+            <li>''' + i + '''</li>
+        </ul>
+        '''
+    return render_template('suggestions.html', suggestions = suggestions)
 
 @app.route('/yoursubscriptions')    
 def subscriptions():
@@ -40,7 +49,7 @@ def findPrice():
         <br><input type="text" name="''' + i + '''" value="0">          How much do you pay for ''' + i + ''' per month?</input>
         <br><input type="text" name="''' + i + '''" value="0">          How many hours have you used this in the past week?</input> <br/> '''
         
-
+    session['choices'] = listOfSubTV
     return render_template('pay&hours.html', userInput = forHtml)
 
 @app.route('/temp', methods = ['POST'])
@@ -71,6 +80,7 @@ def addEmail():
 
     session['username'] = username
     session['password'] = password
+    session['usernamePWDList'].append([username, password])
     
     return render_template('yoursubscriptions.html')
 
