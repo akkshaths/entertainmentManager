@@ -1,14 +1,23 @@
 <html>
-    <body>
-        <h1>Our Suggestions For You</h1>
-        <p>Here are some services that you should subscribe to:</p>
+    <body style="background-color:#D8F0FA;">
+        <head>
+            <style>
+              h1 {text-align: center;}
+              p {text-align: center;}
+            </style>
+          </head>
 
-        <p>TV Shows & Movies</p>
+          <h1>Our Suggestions For You</h1>
+          <p>Here are some services that you should subscribe to:</p>
 
-        <p>Music</p>
+          <label>TV Shows & Movies</label> {{movies}}
 
-        <p>News</p>
+          <label>Music</label> {{music}}
 
-        <p>Magazines</p>
+          <label>News</label> {{news}}
+
+          <label>Magazines</label>  {{magazines}}
+
+          <button class="button" onclick="document.location = '/profile'">My Profile</button>
     </body>
 </html>
