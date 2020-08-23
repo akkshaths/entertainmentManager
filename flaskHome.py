@@ -16,6 +16,11 @@ def hello():
 @app.route('/signup')
 def signup():
     return render_template('signup.html', existingInfo = "")
+
+@app.route('/login')
+def login():
+    return render_template('login.html', wrongInfo = "")
+
     
 
 @app.route('/price', methods = ['POST'])
@@ -25,8 +30,8 @@ def findPrice():
     for i in listOfSubTV:
         #forHtml += i
         forHtml += '''
-        <br><input type="text" name="''' + i + '''" value="0">How much do you pay for ''' + i + ''' per month?</input> <br/>
-        <br><input type="text" name="''' + i + '''" value="0">How many hours have you used this in the past week</input> <br/> '''
+        <br><input type="text" name="''' + i + '''" value="0">          How much do you pay for ''' + i + ''' per month?</input>
+        <br><input type="text" name="''' + i + '''" value="0">          How many hours have you used this in the past week?</input> <br/> '''
         
 
     return render_template('pay&hours.html', userInput = forHtml)
