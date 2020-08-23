@@ -2,25 +2,29 @@
     <body>
         <head>
             <style>
-              h1 {text-align: center;}
-              p {text-align: center;}
+              .center{
+            padding: 10% 0;
+            text-align: center;
+              }
             </style>
           </head>
-        <h1>Sign Up!</h1>
-        <p>Already have an account?</p>
+        
+        <div class = "center">
+          <h1>Sign Up!</h1>
+          <p>Already have an account?</p>
 
-        <div id="bodytext">
-            <table align = "center">
-            <tr>
-              <td>
-                <button class="button" onclick="document.location = '/login'">Go To Login</button></a>
-            </td>
-            </tr>
-            </table>
+          <div id="bodytext">
+              <table align = "center">
+              <tr>
+                <td>
+                  <button class="button" onclick="document.location = '/login'">Go To Login</button></a>
+                </td>
+              </tr>
+              </table>
           </div>
 
             <form action="/temp2" method="post">
-                <p for="email">Email:</p>
+              <p for="email">Email:</p>
                 <div id="bodytext">
                     <table align = "center">
                     <tr>
@@ -29,14 +33,15 @@
                     </td>
                     </tr>
                     </table>
-                  </div>
-                <p for="pwd">Password:</p>
+                 </div>
+
+              <p for="pwd">Password:</p>
                 <div id="bodytext">
                     <table align = "center">
                     <tr>
                       <td>
                         <input type="text" id="pwd" name="pwd" value=" ">
-                    </td>
+                      </td>
                     </tr>
                     </table>
                   </div>
@@ -46,11 +51,12 @@
                     <tr>
                       <td>
                         <br><input type="submit" value="Submit" ></input>
-                    </td>
+                      </td>
                     </tr>
                     </table>
                   </div>
             </form>
+          </div>
 
         {{existingInfo}}
     </body>
