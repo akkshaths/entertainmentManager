@@ -1,7 +1,23 @@
 <html>
     <body>
+        <head>
+            <style>
+              h1 {text-align: center;}
+              p {text-align: center;}
+            </style>
+        </head>
+
         <h1>Information About Your Services</h1>
         {{userInput | safe}}
-        <button>Find Results</button>
+
+        <div id="bodytext">
+            <table align = "center">
+            <tr>
+              <td>
+                <button>Find Results</button>
+            </td>
+            </tr>
+            </table>
+          </div>
     </body>
 </html>
