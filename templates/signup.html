@@ -2,15 +2,16 @@
     <body>
         <h1>Sign Up!</h1>
         <p>Already have an account?</p>
-        <a href="login.html"><button>Go To Login</button></a>
+        <button class="button" onclick="document.location = '/login'">Go To Login</button></a>
 
-        <form>
+        <form action="/temp2" method="post">
             <label for="email">Email:</label><br>
             <input type="text" id="email" name="email" value=" "><br>
             <label for="pwd">Password:</label><br>
             <input type="text" id="pwd" name="pwd" value=" ">
+            <br><input type="submit" value="Submit" ></input>
           </form>
 
-        <a href="yoursubscriptions.html"><button>Sign Up</button></a>
+        {{existingInfo}}
     </body>
 </html>
