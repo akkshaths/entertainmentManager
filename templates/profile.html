@@ -9,11 +9,19 @@
 
         <h1>My Profile</h1>
         <p>Username:</p>
-        <label><b>Subscriptions</b></label>
-
-        <label><b>Monthly Payments</b></label>
+        <label><b>Subscriptions</b></label> 
+        
+        <label><b>Monthly Payments</b></label> 
 
         <label><b>Weekly Usage (in hours)</b></label>
+
+        <div style = "position:fixed; left:35%; top:500px">
+            <button class="button" onclick="document.location = '/yoursubscriptions'">Add Subscriptions</button>
+        </div>
+
+        <div style = "position:fixed; left:60%; top:500px">
+            <button class="button" onclick="document.location = '/suggestions'">Suggestions</button>
+        </div>
 
         {{mySubscriptions}}
         {{monthlyPayments}}
