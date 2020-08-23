@@ -42,13 +42,15 @@ def checkEmail():
     
     password = request.form.get('pwd')
     for i in session['usernamePWDList']:
-        if username != i[0] or password != i[1]:
-            return render_template('login.html', wrongInfo = 'Invalid username or password')
+        if (username == i[0]) and (password == i[1]):
+            session['username'] = username
+            session['password'] = password
+            return redirect('/profile')
 
-    session['username'] = username
-    session['password'] = password
+        
+    return render_template('login.html', wrongInfo = 'Invalid username or password')
+
     
-    return redirect('/profile')
 
 @app.route('/temp2', methods = ['POST'])
 def addEmail():
