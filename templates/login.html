@@ -2,34 +2,38 @@
     <body>
         <head>
             <style>
-              h1 {text-align: center;}
-              p {text-align: center;}
+              .center{
+            padding: 14% 0;
+            text-align: center;
+              }
             </style>
           </head>
 
-        <h1>Log In!</h1>
-        <p>If you already have an account, then log in below.</p>
-       
-        <form action="/temp" method="post">
-            <p for="email">Email:</p>
-            <div id="bodytext">
-                <table align = "center">
-                <tr>
-                  <td>
-                    <input type="text" id="email" name="email" value=""><br>
-                </td>
-                </tr>
-                </table>
+        <div class = "center">
+          <h1>Log In!</h1>
+          <p>If you already have an account, then log in below.</p>
+         
+          <form action="/temp" method="post">
+              <p for="email">Email:</p>
+              <div id="bodytext">
+                  <table align = "center">
+                  <tr>
+                    <td>
+                      <input type="text" id="email" name="email" value=""><br>
+                    </td>
+                  </tr>
+                  </table>
               </div>
-            <p for="pwd">Password:</p>
-            <div id="bodytext">
-                <table align = "center">
-                <tr>
-                  <td>
-                    <input type="text" id="pwd" name="pwd" value="">
-                </td>
-                </tr>
-                </table>
+
+              <p for="pwd">Password:</p>
+              <div id="bodytext">
+                  <table align = "center">
+                  <tr>
+                    <td>
+                      <input type="text" id="pwd" name="pwd" value="">
+                    </td>
+                  </tr>
+                  </table>
               </div>
 
               <div id="bodytext">
@@ -41,7 +45,8 @@
                 </tr>
                 </table>
               </div>
-        </form>
+            </form>
+        </div>
 
         {{wrongInfo}}
     </body>
