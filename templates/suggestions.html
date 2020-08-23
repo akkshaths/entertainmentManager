@@ -2,20 +2,24 @@
     <body>
         <head>
             <style>
-              h1 {text-align: center;}
-              p {text-align: center;}
+              .center{
+            padding: 17% 0;
+            text-align: center;
+          }
             </style>
           </head>
 
-        <h1>Our Suggestions For You</h1>
-        <p>Here are some services that you should subscribe to:</p>
+          <h1>Our Suggestions For You</h1>
+          <p>Here are some services that you should subscribe to:</p>
 
-        <label>TV Shows & Movies</label> {{movies}}
+          <label>TV Shows & Movies</label> {{movies}}
 
-        <label>Music</label> {{music}}
+          <label>Music</label> {{music}}
 
-        <label>News</label> {{news}}
+          <label>News</label> {{news}}
 
-        <label>Magazines</label>  {{magazines}}
+          <label>Magazines</label>  {{magazines}}
+
+          <button class="button" onclick="document.location = '/profile'">Suggestions</button>
     </body>
 </html>
