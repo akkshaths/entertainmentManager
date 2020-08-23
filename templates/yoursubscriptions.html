@@ -1,48 +1,65 @@
 <html>
     <body>
+        <head>
+            <style>
+              h1 {text-align: center;}
+              p {text-align: center;}
+            </style>
+          </head>
+          
         <h1>Your Subscriptions</h1>
         <p>Please choose the services that you are subscribed to:</p>
 
-        <p><b>TV Shows & Movies</b></p>
-        <form action="/price" method="post">
-        <input type="checkbox" name="tv" value="Netflix">Netflix</input>
-        <br><input type="checkbox" name="tv" value="Amazon Prime Video">Amazon Prime Video</input>
-        <br><input type="checkbox" name="tv" value="Hulu">Hulu</input>
-        <br><input type="checkbox" name="tv" value="HBO">HBO</input>
-        <br><input type="checkbox" name="tv" value="Peacock">Peacock</input>
-        <br><input type="checkbox" name="tv" value="Disney+">Disney+</input>
-        <br><input type="checkbox" name="tv" value="Sling">Sling</input>
-        <br><input type="checkbox" name="tv" value="ESPN+">ESPN+</input>
-        <br><input type="checkbox" name="tv" value="Fubo TV">Fubo TV</input> 
-        <br><input type="checkbox" name="tv" value="NFL Game Pass">NFL Game Pass</input>
+        <div style = "position:fixed; left:5%; top:150px">
+            <label><b>TV Shows & Movies</b></label><br>
+            <form action="/price" method="post">
+            <input type="checkbox" name="tv" value="Netflix">Netflix</input>
+            <br><input type="checkbox" name="tv" value="Amazon Prime Video">Amazon Prime Video</input>
+            <br><input type="checkbox" name="tv" value="Hulu">Hulu</input>
+            <br><input type="checkbox" name="tv" value="HBO">HBO</input>
+            <br><input type="checkbox" name="tv" value="Peacock">Peacock</input>
+            <br><input type="checkbox" name="tv" value="Disney+">Disney+</input>
+            <br><input type="checkbox" name="tv" value="Sling">Sling</input>
+            <br><input type="checkbox" name="tv" value="ESPN+">ESPN+</input>
+            <br><input type="checkbox" name="tv" value="Fubo TV">Fubo TV</input> 
+            <br><input type="checkbox" name="tv" value="NFL Game Pass">NFL Game Pass</input>
+        </div>        
 
-        <p><b>Music</b>></p>
-        <input type="checkbox" name="tv" value="Spotify">Spotify</input>
-        <br><input type="checkbox" name="tv" value="Apple Music">Apple Music</input>
-        <br><input type="checkbox" name="tv" value="Amazon Music">Amazon Music</input>
+        <div style = "position:fixed; left:31.5%; top:150px">
+            <label><b>Music</b></label><br>
+            <input type="checkbox" name="tv" value="Spotify">Spotify</input>
+            <br><input type="checkbox" name="tv" value="Apple Music">Apple Music</input>
+            <br><input type="checkbox" name="tv" value="Amazon Music">Amazon Music</input>
+        </div>
 
-        <p><b>News</b>></p>
-        <input type="checkbox" name="tv" value="Wall Street Journal">Wall Street Journal</input>
-        <br><input type="checkbox" name="tv" value="New York Times">New York Times</input>
-        <br><input type="checkbox" name="tv" value="Time">Time</input>
-        <br><input type="checkbox" name="tv" value="Fortune">Fortune</input>
-        <br><input type="checkbox" name="tv" value="Barrons">Barrons</input>
-        <br><input type="checkbox" name="tv" value="Cosmopolitan">Cosmopolitan</input>
-        <br><input type="checkbox" name="tv" value="US Weekly">US Weekly</input>
-        <br><input type="checkbox" name="tv" value="Entertainment Weekly">Entertainment Weekly</input>
-        <br><input type="checkbox" name="tv" value="Forbes">Forbes</input>
-        <br><input type="checkbox" name="tv" value="Smithsonian">Smithsonian</input>
+        <div style = "position:fixed; left:58%; top:150px">
+            <label><b>News</b></label><br>
+            <input type="checkbox" name="tv" value="Wall Street Journal">Wall Street Journal</input>
+            <br><input type="checkbox" name="tv" value="New York Times">New York Times</input>
+            <br><input type="checkbox" name="tv" value="Time">Time</input>
+            <br><input type="checkbox" name="tv" value="Fortune">Fortune</input>
+            <br><input type="checkbox" name="tv" value="Barrons">Barrons</input>
+            <br><input type="checkbox" name="tv" value="Cosmopolitan">Cosmopolitan</input>
+            <br><input type="checkbox" name="tv" value="US Weekly">US Weekly</input>
+            <br><input type="checkbox" name="tv" value="Entertainment Weekly">Entertainment Weekly</input>
+            <br><input type="checkbox" name="tv" value="Forbes">Forbes</input>
+            <br><input type="checkbox" name="tv" value="Smithsonian">Smithsonian</input>
+        </div>
 
-        <p><b>Magazines</b>></p>
-        <input type="checkbox" name="tv" value="Health">Health</input>
-        <br><input type="checkbox" name="tv" value="Food & Wine">Food & Wine</input>
-        <br><input type="checkbox" name="tv" value="Sports Illustrated">Sports Illustrated</input>
-        <br><input type="checkbox" name="tv" value="Car and Driver">Car and Driver</input>
-        <br><input type="checkbox" name="tv" value="Reader's Digest">Reader's Digest</input>
-        <br><input type="checkbox" name="tv" value="Vanity Fair">Vanity Fair</input>
-        <br><input type="checkbox" name="tv" value="Bridal Guide">Bridal Guide</input>
-        <br><input type="submit" value="Next" ></input>
-        </form>
+        <div style = "position:fixed; left:84.5%; top:150px">
+            <label><b>Magazines</b></label><br>
+            <input type="checkbox" name="tv" value="Health">Health</input>
+            <br><input type="checkbox" name="tv" value="Food & Wine">Food & Wine</input>
+            <br><input type="checkbox" name="tv" value="Sports Illustrated">Sports Illustrated</input>
+            <br><input type="checkbox" name="tv" value="Car and Driver">Car and Driver</input>
+            <br><input type="checkbox" name="tv" value="Reader's Digest">Reader's Digest</input>
+            <br><input type="checkbox" name="tv" value="Vanity Fair">Vanity Fair</input>
+            <br><input type="checkbox" name="tv" value="Bridal Guide">Bridal Guide</input>
+                <div style = "position:fixed; left:50%; top:500px">
+                    <input type="submit" value="Next" ></input>
+                </div>
+            </form>
+        </div>
     
     </body>
 </html>
